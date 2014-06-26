@@ -1,0 +1,6 @@
+﻿@model MovieProject.Data.Models.Movie
+<a href="/home/UpdateMovie/@Model.Id">Edit</a>
+<h2>@Model.Title</h2>
+<p>@Model.Summary</p>
+<img src="@Model.ImageUrl" /> <br />
+<a href="/home/DeleteMovie/@Model.Id"><input type="button" value="Delete"/></a>

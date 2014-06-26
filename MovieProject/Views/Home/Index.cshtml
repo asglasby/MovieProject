@@ -1,0 +1,9 @@
+﻿@model List<MovieProject.Data.Models.Movie>
+
+<a href="/home/CreateMovie">Add New Movie</a> <br />
+<hr />
+
+@foreach (var movie in Model)
+{
+    <a href="/home/View/@movie.Id">@movie.Title</a> <br />
+}

@@ -1,0 +1,8 @@
+﻿@model MovieProject.Data.Models.Movie
+
+<form method="post" action="/home/UpdateMovie/@Model.Id">
+    <input type="text" name="title" value="@Model.Title" /><br />
+    <input type="text" name="summary" value="@Model.Summary" /><br />
+    <input type="text" name="imageUrl" value="@Model.ImageUrl" /><br />
+    <input type="submit" />
+</form>
